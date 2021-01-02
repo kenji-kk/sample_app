@@ -114,6 +114,9 @@ Rails.application.configure do
   # and use secure cookies.
   config.force_ssl = true
   
+  # アップロードされたファイルをAWSに保存する
+  config.active_storage.service = :amazon
+  
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.delivery_method = :smtp
   host = 'fdsjfhaikepq.herokuapp.com'
